@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="43">
+    <author>Farmer Andy</author>
+    <version>1.0.0.2</version>
+    <title>
+        <en>Hof Bergmann</en>
+        <de>Hof Bergmann</de>
+    </title>
+    <description>
+        <en>Hof Bergmann Map - The Original</en>
+        <de>Hof Bergmann Map - Das Original</de>
+		<pl>Mapa Hof Bergmann - Oryginał</pl>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true" requiredModName="FS19_HofBergmann"/>
+	<changeModTitle modTitle="Hof Bergmann Map"/>
+    
+	<maps>
+        <map id="HofBergmann" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="hofBergmann.xml" defaultVehiclesXMLFilename="defaultVehicles.xml" defaultItemsXMLFilename="defaultItems.xml">
+		    <title>
+                <en>HOF BERGMANN</en>
+                <de>HOF BERGMANN</de>
+            </title>
+            <description>
+                <en>New Chapter</en>
+                <de>Ein neues Kapitel</de>
+				<pl>Mowy rozdział</pl>
+            </description>
+            <iconFilename>map_preview.png</iconFilename>
+		</map>
+    </maps>
+	
+	<brands>
+        <brand name="HOFBERGMANN" title="HOFBERGMANN" image="$data/store/brands/brand_bergmann.dds"/>
+		<brand name="LSFMINNOVATIONS" title="LSFM Innovations" image="store/brand_lsfmInnovations.dds"/>
+		<brand name="BASF" title="BASF" image="store/brand_basf.dds"/>
+    </brands>
+	
+	<renderElements>
+		<!-- Version -->
+		<renderElement startTime="0" endTime="300" showOnlyOnFirstStart="true">
+			<text name="$l10n_logo_text1" posX="0.5" posY="0.075" size="0.017" color="1 1 1" useSizeing="false" useColoring="false" maxSize="0.035" useBold="true"/>
+			<overlay filename="hud/mapBranding.dds" posX="0.375" posY="0.5" width="0.25" height="0.11" />
+		</renderElement>
+		
+		<!-- Credits -->
+		<renderElement startTime="400" endTime="900" showOnlyOnFirstStart="true">
+			<text name="$l10n_logo_text2" posX="0.5" posY="0.68" size="0.02" color="1 1 1" useSizeing="false" useColoring="false" maxSize="0.035" useBold="true" />
+			<overlay filename="hud/mapCredits.dds" posX="0.42" posY="0.25" width="0.15" height="0.06" />
+		</renderElement>
+	</renderElements>
+	
+	<l10n>
+		<text name="logo_text1"><en><![CDATA[Hof Bergmann V1.0.0.0
+© 2018-2019 by Farmer Andy
+www.lsfarming-mods.com]]></en></text>
+		<text name="logo_text2"><en><![CDATA[Credits:
+
+Map Creator/Modder:
+Farmer Andy
+
+Scripters:
+Ifkonator
+
+Advertised and Promoted by:
+Snookie Snu
+
+Special Thanks !
+112Tec for Animated Characters Script
+]]></en>
+<pl><![CDATA[Autorzy:
+
+Twórca mapy:
+Farmer Andy
+
+Skrypter:
+Ifkonator
+
+Reklamowane i promowane przez:
+Snookie Snu
+
+Specjalne podziękowania dla:
+112Tec za skrypt animacji postaci
+
+Tłumaczenie na język polski:
+Ziuta
+]]></pl></text>
+	
+		<!-- Misc -->
+		<text name="HofBergmann"> <en>HofBergmann</en> <de>HofBergmann</de><pl>HofBergmann</pl></text>	
+		<text name="closedText_default"> <en>Closed</en> <de>Geschlossen, komme später wieder !</de><pl>Zamknięte, wróć później!</pl></text>	
+		<text name="category_crates"> <en>Crates</en> <de>Kisten</de><pl>Skrzynie</pl></text>
+		<text name="category_miscObjects"> <en>Misc</en> <de>Diverses</de><pl>Różne</pl></text>
+		<text name="hofBergmann_hint01"> <en>©2019 LSFM All rights reserved. Support and information about the map at www.lsfarming-mods.com</en> <de>© 2019 LSFM Alle Rechte vorbehalten. Support und Infos zur Map unter www.lsfarming-mods.com</de><pl>© 2019 LSFM Wszelkie prawa zastrzeżone. Wsparcie i info o mapie na www.lsfarming-mods.com</pl></text>
+		
+		<!-- Actions -->
+		<text name="action_openDoorTop"> <en>Open upper door</en> <de>Obere Tür öffnen</de><pl>Otwórz górne drzwi</pl></text>	
+		<text name="action_closeDoorTop"> <en>Close upper door</en> <de>Obere Tür schließen</de><pl>Zamknij górne drzwi</pl></text>
+		
+		<text name="action_openDoorBottom"> <en>Open bottom door</en> <de>Untere Tür öffnen</de><pl>Otwórz dolne drzwi</pl></text>
+		<text name="action_closeDoorBottom"> <en>Close bottom door</en> <de>Untere Tür schließen</de><pl>Zamknij dolne drzwi</pl></text>
+		
+		<text name="action_openAtticDoor"> <en>Open attic door</en> <de>Dachboden Tür öffnen</de> <pl>Otwórz właz strychu</pl></text>
+		<text name="action_closeAtticDoor"> <en>Close attic door</en> <de>Dachboden Tür schließen</de> <pl>Zamknij właz strychu</pl></text>
+		
+		<text name="action_openSlurryPit"> <en>Open Slurry Pit</en> <de>Güllegrube öffnen</de><pl>Otwórz zbiornik gnojowicy</pl></text>
+		<text name="action_closeSlurryPit"> <en>Close Slurry Pit</en> <de>Güllegrube schliessen</de><pl>Zamknij zbiornik gnojowicy</pl></text>
+		
+		<text name="action_liftUp"> <en>lift shelf floor</en> <de>Regalboden heben</de><pl>Opuść półkę</pl></text>
+		<text name="action_lowerDown"> <en>lower shelf floor</en> <de>Regalboden senken</de><pl>Podnieś półkę</pl></text>
+		
+		<text name="action_rollGateliftUp"> <en>lift up rollgate</en> <de>Rolltor Hoch</de><pl>Otwórz bramę</pl></text>
+		<text name="action_rollGatelowerDown"> <en>lower down rollgate</en> <de>Rolltor Runter</de><pl>Zamknij bramę</pl></text>
+		
+		<text name="action_fanStart"> <en>Fans on</en> <de>Ventilation einschalten</de><pl>Włącz wentylację</pl></text>	
+		<text name="action_fanStop"> <en>Fans off</en> <de>Ventilation ausschalten</de><pl>Wyłącz wentylację</pl></text>
+		
+		<text name="action_openElectroFence"> <en>open electro fence</en> <de>Weidezaun öffnen</de><pl>Otwórz ogrodzenie</pl></text>	
+		<text name="action_closeElectroFence"> <en>close electro fence</en> <de>Weidezaun schliessen</de>Zamknij ogrodzenie</text>
+		
+		<text name="action_cheeseMakerOn"> <en>Cheese Maker on</en> <de>Käsemaschine anschalten</de><pl>Włącz maszynę do sera</pl></text>
+		<text name="action_cheeseMakerOff"> <en>Cheese Maker off</en> <de>Käsemaschine ausschalten</de><pl>Wyłącz maszynę do sera</pl></text>
+
+		<!-- Filltypes -->
+		<text name="fillType_clover"> <en>Clover</en> <de>Klee</de><pl>Koniczyna</pl></text>	
+		<text name="fillType_compost"> <en>Compost</en> <de>Kompost</de><pl>Kompost</pl></text>
+		<text name="fillType_biomass"> <en>Biomass</en> <de>Biomasse</de><pl>Biomasa</pl></text>		
+		<text name="fillType_wholeGrain"> <en>Whole Grain</en> <de>Getreideschrot</de><pl>Śruta</pl></text>	
+		<text name="fillType_deadAnimal"> <en>Animal Cadaver</en> <de>Tier Kadaver</de><pl>Truchło</pl></text>		
+		<text name="fillType_rubinTT"> <en>Rubin® TT (Pickling)</en> <de>Rubin® TT (Beize)</de><pl>Rubin® TT (zaprawa)</pl></text>			
+		<text name="fillType_cheese"> <en>Cheese</en> <de>Käse</de><pl>Ser</pl></text>			
+		<text name="fillType_butter"> <en>Butter</en> <de>Butter</de><pl>Masło</pl></text>			
+		
+		<!-- Stations -->
+		<text name="station_animalDealer"> <en>Animal Dealer</en> <de>Viehhändler</de><pl>Sprzedawca zwierząt</pl></text>
+		<text name="station_seedsSilo"> <en>Lime Silo (Farm)</en> <de>Saatgut Silo</de><pl>Silos na wapno</pl></text>
+		<text name="station_liquidManureStation"> <en>Slurry Buying</en> <de>Gülle Verkauf</de><pl>Skup gnojowicy</pl></text>
+		<text name="station_raiffeisen"> <en>Raiffeisen</en> <de>Raiffeisen</de><pl>Raiffeisen</pl></text>	
+		<text name="station_grainMill"> <en>Grain Mill</en> <de>Kornmühle</de><pl>Młyn zbożowy</pl></text>	
+		<text name="station_horseRanch"> <en>Horse Ranch</en> <de>Pferdehof</de><pl>Ranczo koni</pl></text>
+		<text name="station_inn"> <en>Inn</en> <de>Gasthaus</de><pl>Zajazd</pl></text>
+		<text name="station_carpentery"> <en>Carpentery</en> <de>Schreinerei</de><pl>Stolarnia</pl></text>
+		<text name="station_skinner"> <en>Skinner</en> <de>Abdeckerei</de><pl>Punkt utylizacji</pl></text>
+		<text name="station_farmShop"> <en>Farm Shop</en> <de>Hofladen</de><pl>Sklep gospodarstwa</pl></text>
+		<text name="station_chemicalTank"> <en>Chemical Tank</en> <de>Chemie Tank</de><pl>Zbiornik chemikaliów</pl></text>
+		
+		<!-- Stations Households -->
+		<text name="station_household01"> <en>Villager Name - Family Ritter</en> <de>Wohnhaus - Familie Ritter</de><pl>Dom rodziny Ritter</pl></text>
+		<text name="station_household02"> <en>Villager Name - Family Freisler</en> <de>Wohnhaus - Familie Freisler</de><pl>Dom rodziny Freisler</pl></text>
+		<text name="station_household03"> <en>Villager Name - Family Miller</en> <de>Wohnhaus - Familie Müller</de><pl>Dom rodziny Miller</pl></text>
+		<text name="station_household04"> <en>Villager Name - Family Meyer</en> <de>Wohnhaus - Familie Meyer</de><pl>Dom rodziny Meyer</pl></text>
+		<text name="station_household05"> <en>Villager Name - Family Geis</en> <de>Wohnhaus - Familie Geis</de><pl>Dom rodziny Geis</pl></text>
+		<text name="station_household06"> <en>Villager Name - Family Schroeder</en> <de>Wohnhaus - Familie Schröder</de><pl>Dom rodziny Schroeder</pl></text>
+		<text name="station_household07"> <en>Villager Name - Family Lehmann</en> <de>Wohnhaus - Familie Lehmann</de><pl>Dom rodziny Lehmann</pl></text>
+		<text name="station_household08"> <en>Villager Name - Family Schreiber</en> <de>Wohnhaus - Familie Schreiber</de><pl>Dom rodziny Schreiber</pl></text>		
+
+		<!-- Hot Spots -->
+		<text name="hotSpot_vehicleShop"> <en>Vehicle Shop</en> <de>Händler</de><pl>Dealer</pl></text>
+		<text name="hotSpot_cowPastureA"> <en>Cow Pasture A</en> <de>Kuhweide A</de><pl>Pastwisko krów A</pl></text>
+		<text name="hotSpot_cowPastureB"> <en>Cow Pasture B</en> <de>Kuhweide B</de><pl>Pastwisko krów B</pl></text>
+		<text name="hotSpot_pigbreedingPlants"> <en>Pig Breeding</en> <de>Schweinezucht</de><pl>Ferma tuczników</pl></text>
+		
+		<text name="hotSpot_biogasPlant"> <en>Biogas Plant</en> <de>Biogasanlage</de><pl>Biogazownia</pl></text>
+		
+		<text name="hotSpot_forestArea1"> <en>Forest Area 1</en> <de>Forstgebiet 1</de><pl>Obszar wycinki 1</pl></text>
+		<text name="hotSpot_forestArea2"> <en>Forest Area 2</en> <de>Forstgebiet 2</de><pl>Obszar wycinki 2</pl></text>
+		<text name="hotSpot_animalDealer"> <en>Animal Dealer</en> <de>Viehhandel</de><pl>Sprzedawca zwierząt</pl></text>
+		<text name="hotSpot_liquidManurePit"> <en>Slurry Storage</en> <de>Güllelager</de><pl>Zbiornik gnojowicy</pl></text>
+		
+		<text name="hotSpot_dairy"> <en>Dairy</en> <de>Molkerei</de><pl>Mleczarnia</pl></text>
+		<text name="hotSpot_grainMill"> <en>Grain Mill</en> <de>Kornmühle</de><pl>Młyn zbożowy</pl></text>
+		<text name="hotSpot_spinnery"> <en>Spinnery</en> <de>Weberei</de><pl>Tkalnia</pl></text>
+		<text name="hotSpot_inn"> <en>Inn</en> <de>Gasthaus</de><pl>Zajazd</pl></text>
+		<text name="hotSpot_veggieFarm"> <en>Vegetable Farm</en> <de>Gemüseanbau</de><pl>Farma warzywna</pl></text>
+		<text name="hotSpot_carpentery"> <en>Carpentery</en> <de>Schreinerei</de><pl>Stolarnia</pl> </text>
+		<text name="hotSpot_skinner"> <en>Skinner</en> <de>Abdeckerei</de><pl>Punkt utylizacji</pl></text>
+		<text name="hotSpot_horseRanch"> <en>Horse Ranch</en> <de>Pferdehof</de><pl>Ranczo koni</pl></text>
+		<text name="hotSpot_cheeseDairy"> <en>Cheese Dairy</en> <de>Käserei</de><pl>Serowarnia</pl></text>
+		
+		<!-- BaleStorages -->
+		<text name="shopItem_squareBaleStorage"> <en>Squarebale Storage</en> <de><![CDATA[Quaderballen Lager]]></de><pl>Stóg bel kwadratowych</pl></text>
+		<text name="typeDesc_squareBaleStorage"> <en>Squarebale Storage</en> <de><![CDATA[Quaderballen Lager]]></de><pl>Stóg bel kwadratowych</pl></text>
+		<text name="shopItem_roundBaleStorage"> <en>Roundbale Storage</en> <de><![CDATA[Rundballen Lager]]></de><pl>Stóg bel okrągłych</pl></text>
+		<text name="typeDesc_roundBaleStorage"> <en>Roundbale Storage</en> <de><![CDATA[Rundballen Lager]]></de><pl>Stóg bel okrągłych</pl></text>
+		
+		<text name="baleStorage_unloadHere"> <en>Bales now outsourced</en> <de><![CDATA[Ballen jetzt auslagern]]></de><pl>Bele zostały wyładowane</pl></text>
+		<text name="baleStorage_unload"> <en>Bale retrieval</en> <de><![CDATA[Ballen Auslagerung]]></de><pl>Wyładuj bele ze stogu</pl></text>
+		<text name="baleStorage_abortUnload"> <en>Break off bale retrieval</en> <de><![CDATA[Ballen Auslagern abbrechen]]></de><pl>Przerwij wyładunek bel ze stogu</pl></text>
+		<text name="baleStorage_storeModusOn"> <en>Switch on storage mode !</en> <de><![CDATA[Lager Modus anschalten !]]></de><pl>Włącz tworzenie stogu</pl></text>
+		<text name="baleStorage_storeModusOff"> <en>Switch off storage mode !</en> <de><![CDATA[Lager Modus ausschalten ! ]]></de><pl>Wyłącz tworzenie stogu</pl></text>
+		<text name="baleStorage_lowerText"> <en>back</en> <de><![CDATA[Zurück]]></de><pl>Powrót</pl></text>
+		
+		<!-- Animals -->
+		<text name="animal_cowStable"> <en>Cow Stable (Farm)</en> <de>Kuhstall (Hof)</de><pl>Obora (Farma)</pl></text>
+		<text name="animals_cowPasture01"> <en>Cow Pasture A</en> <de>Kuhweide A</de><pl>Pastwisko krów A</pl></text>
+		<text name="animals_cowPasture02"> <en>Cow Pasture B</en> <de>Kuhweide B</de><pl>Pastwisko krów B</pl></text>
+		
+		<text name="animals_horseRanch"> <en>Horse Ranch</en> <de>Pferdehof</de>Ranczo koni</text>
+		<text name="animals_horsePaddockA"> <en>Paddock A</en> <de>Pferdekoppel A</de><pl>Padok A</pl></text>		
+		
+		<text name="animal_pigStableBig01"> <en>Pig Shed 1 (breeding facility)</en> <de>Schweinezucht (Stall 1)</de><pl>Chlew 1</pl></text>	
+		<text name="animal_pigStableBig02"> <en>Pig Shed 2 (breeding facility)</en> <de>Schweinezucht (Stall 2)</de><pl>Chlew 2</pl></text>	
+		<text name="animal_pigStableBig03"> <en>Pig Shed 3 (breeding facility)</en> <de>Schweinezucht (Stall 3)</de><pl>Chlew 3</pl></text>
+		
+		<text name="shopItem_deadAnimal"> <en>Animal Cadaver</en> <de>Tier Kadaver</de><pl>Truchło</pl></text>
+		
+		<text name="fillTypeGroup_power"> <en>Power Food</en> <de>Kraftfutter</de><pl>Pasza treściwa</pl></text>	
+		
+		<text name="shopItem_goatBrown"> <en>Goat (Brown)</en> <de>Ziege (Braun)</de><pl>Koza (brązowa)</pl></text>	
+		<text name="shopItem_goatWhite"> <en>Goat (White)</en> <de>Ziege (Weiss)</de><pl>Koza (biała)</pl></text>	
+		<text name="shopItem_goatGrey"> <en>Goat (Grey)</en> <de>Ziege (Grau)</de><pl>Koza (szara)</pl></text>	
+		<text name="shopItem_goatBlack"> <en>Goat (Black)</en> <de>Ziege (Schwarz)</de><pl>Koza (czarna)</pl></text>	
+		<text name="fillType_goat"> <en>Goat</en> <de>Ziege</de><pl>Koza</pl></text>	
+		<text name="shopItem_ramBlack"> <en>Ram</en> <de>Schafsbock</de><pl>Baran</pl></text>	
+		<text name="fillType_ram"> <en>Ram</en> <de>Schafsbock</de><pl>Baran</pl></text>	
+		
+		<text name="shopItem_duckBrown"> <en>Duck (Brown)</en> <de>Ente (Braun)</de><pl>Kaczka (brązowa)</pl></text>	
+		<text name="shopItem_duckWhite"> <en>Duck (White)</en> <de>Ente (Weiss)</de><pl>Kaczka (biała)</pl></text>	
+		<text name="shopItem_duckBlack"> <en>Duck (Black)</en> <de>Ente (Schwarz)</de><pl>Kaczka (czarna)</pl></text>	
+		<text name="fillType_duck"> <en>Duck</en> <de>Ente</de><pl>Kaczka</pl></text>	
+		
+		<text name="shopItem_pigletRed"> <en>Piglet (Red)</en> <de>Ferkel (Rosa)</de><pl>Prosię (różowe)</pl></text>	
+		<text name="shopItem_pigletWhite"> <en>Piglet (White)</en> <de>Ferkel (Weiß)</de><pl>Prosię (białe)</pl></text>	
+		<text name="shopItem_pigletBlackWhite"> <en>Piglet (Black/White)</en> <de>Ferkel (Schwarz/Weiß)</de><pl>Prosię (czarno-białe)</pl></text>	
+		<text name="shopItem_pigletBlack"> <en>Piglet (Black)</en> <de>Ferkel (Schwarz)</de><pl>Prosię (czarne)</pl></text>	
+		<text name="fillType_piglet"> <en>Piglet</en> <de>Ferkel</de><pl>Prosię</pl></text>
+		
+		<text name="shopItem_pig2Red"> <en>Breeding Pig (Red)</en> <de>Zuchtschwein (Rosa)</de><pl>Tucznik (różowy)</pl></text>	
+		<text name="shopItem_pig2White"> <en>Breeding Pig (White)</en> <de>Zuchtschwein (Weiß)</de><pl>Tucznik (biały)</pl></text>	
+		<text name="shopItem_pig2BlackWhite"> <en>Breeding Pig (Black/White)</en> <de>Zuchtschwein (Schwarz/Weiß)</de><pl>Tucznik (czarno-biały)</pl></text>	
+		<text name="shopItem_pig2Black"> <en>Breeding Pig (Black)</en> <de>Zuchtschwein (Schwarz)</de>Tucznik (czarny)</text>	
+		<text name="fillType_pig2"> <en>Breeding Pig</en> <de>Zuchtschwein</de><pl>Tucznik</pl></text>	
+		<text name="ui_statisticView_pig2"> <en>Breeding Pigs</en> <de>Zuchtschweine</de><pl>Tucznik</pl></text>		
+		
+		<!-- Objects -->
+		<text name="shopItem_bigBagWholeGrain"> <en>Whole Grain Big-Bag</en> <de>Getreideschrot Big-Bag</de><pl>Big-Bag śruty</pl></text>	
+		<text name="function_bigBagWholeGrain"> <en>Needed for the production of pig feed.</en> <de>Wird benötigt zur Schweinefutterherstellung.</de><pl>Potrzebny do produkcji paszy dla świń.</pl></text>
+		<text name="shopItem_bigBagForage"> <en>Forage Big-Bag</en> <de>Mischfutter Big-Bag</de><pl>Big-Bag paszowy</pl></text>	
+		<text name="function_bigBagForage"> <en>Power feed for their cattle.</en> <de>Kraftfutter für ihre Rinder.</de><pl>Koncentrat dla bydła.</pl></text>
+		<text name="function_rubinTT"> <en>Rubin® TT is a seed dressing for cereals to detect seed and soilborne diseases. Serves as a seed dressing for the SeedMaster™.</en> <de>Rubin® TT ist eine Saatgutbeize für Getreide zur Erfassung von samen- und bodenbürtigen Krankheiten. Dient als Beizmittel für den SeedMaster™.</de><pl>Rubin® TT jest zaprawą do nasion zbóż do wykrywania chorób nasion i gleby. Służy jako zaprawa do nasion do SeedMaster™.</pl></text>
+		<text name="shopItem_fillableBox"> <en>Fillable Box</en> <de>Befüllbare Plastikbox</de><pl>Skrzynia plastikowa</pl></text>	
+		<text name="function_fillableBox"> <en>Fillable reusable plastic box, filling: shovel or trailer (grain slider recommended).  Transport: pallet fork, when empty also by hand.</en> <de>Befüllbare Mehrweg Plastikbox, Befüllung: Schaufel oder Anhänger (Kornschieber empfohlen). Transport: Palettengabel, im Leerzustand auch von Hand.</de><pl>Plastikowa skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: widły do palet, ręcznie (gdy są puste).</pl></text>	
+		<text name="shopItem_fillableBoxSmall"> <en>Fillable Box (small)</en> <de>Befüllbare Plastikbox (klein)</de><pl>Skrzynia plastikowa (mała)</pl></text>	
+		<text name="function_fillableBoxSmall"> <en>Fillable reusable plastic box, filling: shovel or trailer (grain slider recommended). Transport: pallet fork, or by hand due to its small size.</en> <de>Befüllbare Mehrweg Plastikbox, Befüllung: Schaufel oder Anhänger (Kornschieber empfohlen). Transport: Palettengabel, oder auch von Hand durch ihre geringe Grösse.</de><pl>Plastikowa skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: widły do palet lub ręcznie ze względu na mały rozmiar.</pl></text>	
+		<text name="shopItem_fillableWoodBox"> <en>Fillable Woodbox</en> <de>Befüllbare Holzkiste</de><pl>Skrzynia drewniana</pl></text>	
+		<text name="function_fillableWoodBox"> <en>Fillable reusable wooden box, filling: shovel or trailer (grain pusher recommended). Transport: Portable</en> <de>Befüllbare Mehrweg Holzkiste, Befüllung: Schaufel oder Anhänger (Kornschieber empfohlen). Transport: Tragbar</de><pl>Drewniana skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: ręcznie.</pl></text>	
+		<text name="shopItem_fillableCagebox"> <en>Fillable Cagebox</en> <de>Befüllbare Gitterbox</de><pl>Skrzynia siatkowa</pl></text>	
+		<text name="function_fillableCagebox"> <en>Fillable reusable mesh box, filling: shovel or trailer (grain slider recommended). Transport: Pallet tool</en> <de>Befüllbare Mehrweg Gitterbox, Befüllung: Schaufel oder Anhänger (Kornschieber empfohlen). Transport: Palettenwerkzeug</de><pl>Siatkowa skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: widły do palet.</pl></text>	
+		<text name="shopItem_fillableBucket"> <en>Bucket</en> <de>Eimer</de><pl>Wiadro</pl></text>	
+		<text name="function_fillableBucket"> <en>Used in the cheese-butter production, in the cheese dairy.</en> <de>Wird benötigt für die Käse-Butter Herstellung, in der Käserei.</de><pl>Potrzebny do produkcji masła i sera w mleczarni.</pl></text>	
+		<text name="shopItem_fillableButterBarrel"> <en>Fillabel Butter Barrel</en> <de>Befüllbares Butterfass</de><pl>Baryłka do masła</pl></text>	
+		<text name="function_fillableButterBarrel"> <en>Needed for butter production.</en> <de>Wird benötigt für die Butter Herstellung.</de><pl>Jest potrzebna do produkcji masła.</pl></text>	
+		<text name="shopItem_duckBathtub"> <en>Duck Bathtub</en> <de>Entenwanne</de><pl>Wanna do kaczek</pl></text>	
+		<text name="function_duckBathtub"> <en>Flat tub to embellish the chicken/ duck enclosure. Can be filled with water.</en> <de>Flache Wanne zum verschönern des Hühner/Enten Geheges. Kann mit Wasser befüllt werden.</de><pl>Płaska wanna, ozdoba zagrody dla kur/kaczek. Może być wypełniona wodą.</pl></text>	
+		<text name="shopItem_transportPallet"> <en>Transport Pallet</en> <de>Transport Palette</de><pl>Paleta</pl></text>	
+		<text name="function_transportPallet"> <en>Pallets can be used to transport objects. The load can be secured with tension straps.</en> <de>Paletten können zum Transport von Objecten verwendet werden. Die Ladung kann mit Spanngurten gesichert werden.</de><pl>Palety mogą być używane do transportu przedmiotów. Ładunek można zabezpieczyć pasami.</pl></text>	
+		<text name="palletState"> <en>State</en> <de>Zustand</de><pl>Status</pl></text>	
+		<text name="newPallet"> <en>New</en> <de>Neu </de><pl>Nowa</pl></text>	
+		<text name="oldPallet"> <en>Used</en> <de>Gebraucht</de><pl>Używana</pl></text>		
+		<text name="shopItem_potatoBag"> <en>Potato Bag</en> <de>Kartoffelsack</de><pl>Worek ziemniaków</pl></text>
+		<text name="shopItem_woodChipsBag"> <en>Wood Chips Bag</en> <de>Hackschnitzelsack</de><pl>Worek z wiórami</pl></text>
+	
+		<!-- Base on Vehicles -->
+		<text name="shopItem_hayBarn"> <en>Straw Blower</en> <de>Strohgebläse</de><pl>Dmuchawa do słomy</pl></text>
+		<text name="enterText_haybarn"> <en>Operate Strawblower</en> <de>Strohgebläse bedienen</de><pl>Obsługa dmuchawy do słomy</pl></text>
+		<text name="typeDesc_automaticHayBarn"> <en>Strawblower</en> <de>Strohgebläse</de><pl>Dmuchawa do słomy</pl></text>
+		
+		<text name="enterText_vertiMix"> <en>Operate VertiMix</en> <de>VertiMix bedienen</de><pl>Obsługa VertiMix</pl></text>
+		<text name="NEEDED_MIXING_TIME"> <en>Work Time</en> <de>Verarbeitungszeit:</de><pl>Czas przetwarzania:</pl></text>
+		<text name="headerText_vertimixTMR"> <en>Mixing Ratio (Forage)</en> <de>Mischverhältnis (TMR):</de><pl>Stosunek mieszanki (TMR):</pl></text>
+		<text name="headerText_vertimixPIG"> <en>Mixing Ratio (Pigfood)</en> <de>Mischverhältnis (Schweinefutter):</de><pl>Stosunek mieszanki (pasza dla świń):</pl></text>
+		
+		<text name="info_tipSidePipe"> <en>Pipe Unload</en> <de>Rohrentleerung</de><pl>Rura wyładowcza</pl></text>
+		<text name="info_tipSideSilo"> <en>Overload to Pigfood Silo</en> <de>Überladen in Schweinefutter Silo</de><pl>Przeładunek do silosu z paszą dla świń</pl></text>
+		
+		<text name="shopItem_fixFerm"> <en>FixFermenter</en> <de>FixFermenter</de><pl>FixFermenter</pl></text>	
+		<text name="enterText_fixFerm"> <en>Operate FixFermenter</en> <de>FixFermenter bedienen</de><pl>Obsługa FixFermenter</pl></text>
+		<text name="headerText_fixFerm"> <en>FixFermenter</en> <de>FixFermenter</de><pl>FixFermenter</pl></text>
+		
+		<text name="enterText_baleStorage"> <en>Operate Balestorage</en> <de>Ballenlager bedienen</de><pl>Obsługa stogu bel</pl></text>
+		<text name="enterText_seedMaster"> <en>Operate SeedMaster</en> <de>SeedMaster bedienen</de><pl>Obsługa SeedMaster</pl></text>
+		
+		<text name="shopItem_grainMill"> <en>Grain Mill</en> <de>Kornmühle</de><pl>Młyn zbożowy</pl></text>	
+		<text name="enterText_grainMill"> <en>Talk with Miller</en> <de>mit Müller reden</de><pl>Porozmawiaj z Millerem</pl></text>
+		<text name="headerText_grainMill"> <en>Production Process Corn Mill:</en> <de>Produktionsvorgang Kornmühle:</de><pl>Proces produkcji młyna zbożowego:</pl></text>
+		
+		<text name="shopItem_hayDryer"> <en>Hay Dryer</en> <de>Heutrockner</de><pl>Suszarnia do siana</pl></text>	
+		<text name="typeDesc_hayDryer"> <en>Hay Dryer</en> <de>Heutrockner</de><pl>Suszarnia do siana</pl></text>	
+		<text name="enterText_hayDryer"> <en>Operate Hay Dryer</en> <de>Heutrockner bedienen</de><pl>Obsługa suszarni do siana</pl></text>
+		<text name="headerText_hayDryer"> <en>Hay Dryer</en> <de>Heutrockner</de><pl>Suszarnia do siana</pl></text>
+		<text name="motor_hayDryer"> <en>Hay Dryer</en> <de>Heutrockner</de><pl>Suszarnia do siana</pl></text>
+		<text name="shopItem_hayDryerOverloadModul"> <en>Hay Dryer Overload Modul</en> <de>Heutrockner Überlademodul</de><pl>Moduł przeładunkowy suszarni do siana</pl></text>	
+		
+		<text name="switch_to_english"> <en>switch language to english</en> <de>Sprache ändern, zu English</de><pl>Zmień na język angielski</pl></text>
+		<text name="switch_to_german"> <en>switch language to german</en> <de>Sprache ändern, zu Deutsch</de><pl>Zmień na język niemiecki</pl></text>
+		
+		<text name="info_tipSideDryer"> <en>unload from drying chamber</en> <de>Entnahme aus Trockenkammer</de><pl>Wyładunek komory suszenia</pl></text>
+		<text name="info_tipSideStorage"> <en>unload from hay chamber</en> <de>Entnahme aus Heukammer</de><pl>Wyładunek komory zmagazynowanego siana</pl></text>
+		<text name="info_tipSideOverload"> <en>overload to hay chamber</en> <de>Überladen in Heukammer</de><pl>Przeładunek do komory magazynującej</pl></text>
+		
+		<text name="enterText_bigBagMax"> <en>Operate BigBag Max</en> <de>BigBag Max bedienen</de><pl>Obsługa Big-Bag Max</pl></text>	
+		
+		<!-- Vehicle Storages -->
+		<text name="shopItem_universalStorageSilo"> <en>Universal Silo</en> <de>Universal Silo</de><pl>Silos uniwersalny</pl></text>	
+		<text name="shopItem_milkStorageTank"> <en>Milk Storage Tank</en> <de>Milch Lagertank</de><pl>Zbiornik na mleko</pl></text>	<!-- Only Cheese Factory -->
+		
+		<!-- Vehicles -->		
+		<text name="function_siloHopper"> <en>The Hof Bergmann Map is used to fill the stationary storage silos.</en> <de>Wird verwendet zum Befüllen der stationären Lagersilos auf der Hof Bergmann Map.</de><pl>Służy do napełniania stacjonarnych silosów magazynowych na mapie Hof Bergmann.</pl></text>
+
+		<text name="shopItem_butterMax"> <en>Butter Machine</en> <de>Buttermaschine</de><pl>Maszyna do masła</pl></text>	
+		<text name="function_butterMax"> <en>Used to make butter. Note: An empty butter barrel is required to fill the butter produced.</en> <de>Wird zur Herstellung von Butter verwendet. Hinweis: Es wird ein leeres Butterfass benötigt um die produzierte Butter abzufüllen.</de><pl>Używane do robienia masła. Uwaga: Do wypełnienia wyprodukowanego masła potrzebna jest pusta baryłka.</pl></text>	
+		<text name="headerText_butterMax"> <en>Butter Machine</en> <de>Buttermaschine</de><pl>Maszyna do masła</pl></text>
+		<text name="enterText_butterMax"> <en>Operate Butter Machine</en> <de>Buttermaschine bedienen</de><pl>Obsługa maszyny do masła</pl></text>
+		
+		<!-- Productions -->
+		<text name="typeDesc_production"> <en>Production</en> <de>Produktion</de><pl>Produkcja</pl></text>
+		<text name="shopItem_fuelStorage"> <en>Fuel Storage</en> <de>Diesellager</de><pl>Zbiornik paliwa</pl></text>	
+		<text name="shopItem_liquidManureStorage"> <en>Slurry Storage</en> <de>Güllelager</de><pl>Zbiornik gnojówki</pl></text>	
+		
+		<!-- Productions based on Animals -->
+		<text name="fillType_prodUnits"> <en>Production Units</en> <de>Produktions Einheiten</de><pl>Jednostki produkcyjne</pl></text>	
+		<text name="shopItem_prodUnits"> <en>Production Units</en> <de>Produktions Einheiten</de><pl>Jednostki produkcyjne</pl></text>	
+		<text name="production_cheese"> <en>cheese dairy</en> <de>Käserei</de><pl>Serowarnia</pl></text>	
+		<text name="ui_statisticView_produnit1"> <en>cheese dairy</en> <de>Käserei</de><pl>Serowarnia</pl></text>
+		
+		<!-- Big Bags -->
+		<text name="shopItem_bigBagChickenFood1"> <en>Chicken Food Big-Bag</en> <de>Hühnerfutter Big-Bag</de><pl>Big-Bag z paszą dla kur</pl></text>
+		<text name="shopItem_bigBagHorseFood1">	<en>Horse Food Big-Bag</en> <de>Pferdefutter Big-Bag</de><pl>Big-Bag z paszą dla koni</pl></text>
+		<text name="shopItem_bigBagLifter">	<en>BigBag Lifter</en>	<de>BigBag Lifter</de><pl>Podnośnik Big-Bagów</pl></text>
+		<text name="typeDesc_bigBagLifter">	<en>BigBag Lifter</en> <de>BigBag Lifter</de><pl>Podnośnik Big-Bagów</pl></text>
+		<text name="function_bigBagLifter">	<en>Attachment Tool for lifting and transporting the LSFM BigBags. Suitable holders can be configured in the shop, so this tool is compatible with all loader types.</en> <de>Anbau Werkzeug zum Heben und Transportieren der LSFM BigBags. Passende Aufnahmen sind im Shop konfigurierbar, somit ist dieses Werkzeug mit allen Lader Typen kompatibel.</de><pl>Zaczepiane narzędzie do podnoszenia i transportu Big-Bagów LSFM. Odpowiednie zaczepy można skonfigurować w sklepie, więc jest kompatybilne ze wszystkimi typami podnośników.</pl></text>
+		<text name="function_bigBagChickenFood"> <en>Wheat is the ideal feed for your chickens.</en> <de>Weizen ist das ideale Futter für deine Hühner.</de><pl>Pszenica jest idealnym pokarmem dla twoich kur.</pl></text>
+		<text name="configuration_valueBlack"> <en>black</en> <de>Schwarz</de><pl>Czarny</pl></text>
+		
+		<!-- Placeables -->
+		<text name="storageSilo_universal"> <en>Universal Storage Silo</en> <de>Universal Lagersilo</de><pl>Silos uniwersalny</pl></text>
+		<text name="function_storageSilo_universal"> <en>Universal storage silo, can be used for almost all fill types. The lid must be opened to fill the silo.</en> <de>Universelles Lagersilo, kann für fast alle Filltypen verwendet werden. Zum Befüllen des Silos muss der Deckel geöffnet werden.</de><pl>Silos uniwersalny, może być używany do prawie wszystkich typów ładunków. Pokrywa musi być otwarta, aby napełnić silos.</pl></text>
+		<text name="storageSilo_pigFood"> <en>Pig Food Silo</en> <de>Schweinefutter Silo</de><pl>Silos paszy dla świń</pl></text>
+	</l10n>
+	
+	<jointTypes>
+        <jointType name="hoseSystem"/>
+    </jointTypes>	
+		
+	<extraSourceFiles>
+		<sourceFile filename="scripts/ChangeModTitle.lua" />
+		<sourceFile filename="scripts/AddStoreCategory.lua" />
+		<sourceFile filename="scripts/l10nFix.lua"/>
+		<sourceFile filename="scripts/I3DLoadingFix.lua"/>
+		<sourceFile filename="scripts/RenderElement.lua" />
+		<sourceFile filename="scripts/AnimalFix.lua"/>
+		<sourceFile filename="scripts/AnimatedCharacter.lua"/>
+		<sourceFile filename="scripts/RegisterSpecialization.lua"/>
+	</extraSourceFiles>
+	
+	<specializations>
+		<specialization name="mixerWagonImproved" className="MixerWagon" 		filename="scripts/MixerWagon.lua"/>
+		<specialization name="fillTypeSigns" 	  className="FillTypeSigns" 	filename="scripts/FillTypeSigns.lua"/>
+		<specialization name="changeEnterText" 	  className="ChangeEnterText" 	filename="scripts/ChangeEnterText.lua"/>
+	</specializations>
+	
+	<registerSpecializations>
+        <registerSpecialization name="addCloverBalesToWrapper" className="AddCloverBalesToWrapper" filename="scripts/AddCloverBalesToWrapper.lua" searchedSpecializations="baleWrapper"/>
+    </registerSpecializations>
+	
+	<vehicleTypes>
+		<!-- BASE MAP VEHICLE TYPES -->
+		<type name="baseDrivableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="ikChains" />
+			 <specialization name="wheels" />
+		<!--	<specialization name="crawlers" /> -->
+			<!-- <specialization name="slopeCompensation" />
+			<specialization name="speedRotatingParts" /> -->
+			<specialization name="enterable" />
+			<specialization name="fillUnit" />
+			<specialization name="motorized" />
+			<specialization name="drivable" />
+			<!-- <specialization name="aiVehicle" />
+			<specialization name="aiImplement" /> -->
+			<!-- <specialization name="articulatedAxis" /> -->
+			<specialization name="lights" />
+			<specialization name="attacherJoints" />
+			<specialization name="powerTakeOffs" />
+			<!-- <specialization name="suspensions" /> -->
+			<specialization name="connectionHoses" />
+			<!-- <specialization name="honk" />
+			<specialization name="wipers" /> -->
+			<!-- <specialization name="frontloaderAttacher" />
+			<specialization name="bunkerSiloCompacter" /> -->
+		</type>
+		
+		<type name="baseAttachableHB"  className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="wheels" />
+			<!-- <specialization name="crawlers" /> -->
+			<!-- <specialization name="slopeCompensation" />
+			<specialization name="speedRotatingParts" /> -->
+			<specialization name="attachable" />
+			<specialization name="lights" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="powerConsumer" />
+			<!-- <specialization name="suspensions" /> -->
+			<!-- <specialization name="aiImplement" /> -->
+			<specialization name="connectionHoses" />
+			<specialization name="attacherJoints" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+		</type>
+		
+		<type name="baseFillableHB" parent="baseAttachableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+		</type>
+	
+		<!-- CUSTOM MAP VEHICLE TYPES -->
+		<type name="automaticHayBarn" parent="baseDrivableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="dischargeable" />
+			<specialization name="bunkerSiloInteractor" />
+			<specialization name="shovel" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="mapBaleStorages" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="enterable" />
+			<specialization name="fillUnit" />
+			<specialization name="cover" />
+			<specialization name="baleLoader" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="mapStorageSilos" parent="baseFillableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="dischargeable" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="fillTypeSigns" />
+		</type>
+				
+		<type name="mixerWagonEnterable" parent="baseDrivableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillVolume" />
+			<specialization name="dischargeable" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="trailer" />
+			<specialization name="cover" />
+			<specialization name="mixerWagonImproved" />
+			<specialization name="tensionBeltObject" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="mixerWagonTMR" parent="mixerWagonEnterable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" />
+        <type name="mixerWagonPigFood" parent="mixerWagonEnterable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" />
+        <type name="mixerWagonSeedMaster" parent="mixerWagonEnterable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" />
+        <type name="mixerWagonFixFermenter" parent="mixerWagonEnterable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" />
+        <type name="mixerWagonButterMax" parent="mixerWagonEnterable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" />
+		
+		<type name="hayDryer" parent="baseDrivableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillVolume" />
+			<specialization name="dischargeable" />
+			<specialization name="bunkerSiloInteractor" />
+			<specialization name="shovel" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="trailer" />
+			<specialization name="cover" />
+			<specialization name="mixerWagonImproved" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="overloadModul" parent="baseFillableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="dischargeable" />
+		</type>
+		
+		<type name="mapProduction" parent="baseFillableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="turnOnVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="enterable" />
+			<specialization name="trailer" />
+			<specialization name="mixerWagonImproved" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="mapFillable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="baseMaterial"  />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+		</type>
+		
+		<type name="attachableMapPallet" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="attachable" />
+			<specialization name="attacherJoints" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+		</type>
+		
+		<type name="universalIBCTank" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+		</type>
+		
+		<type name="siloHopper" parent="baseFillable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="dischargeable" />
+			<specialization name="trailer" />
+		</type>
+		
+		<type name="bigBagFillingStation" parent="baseFillableHB" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="enterable" />
+			<specialization name="dischargeable" />
+			<specialization name="receivingHopper" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="crate" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+		</type>
+		
+		<type name="bucket" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+			<specialization name="fillTypeSigns" />
+		</type>
+						
+		<type name="transportPallet" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="tensionBelts" />
+		</type>
+	</vehicleTypes>	
+	
+	<storeItems>
+		<newStoreCategories>
+			<newStoreCategory type="OBJECT" name="crates" title="$l10n_category_crates" image="store/store_fillableBoxSmall.dds" />
+			<newStoreCategory type="OBJECT" name="miscObjects" title="$l10n_category_miscObjects" image="store/store_category_miscObjects.dds" />
+        </newStoreCategories>
+	
+		<!-- Farm Buildings -->
+	    <storeItem xmlFilename="placeables/farmBuilding/farmBuilding.xml" />
+		<storeItem xmlFilename="placeables/farmBuilding/farmShed.xml" />
+		<storeItem xmlFilename="placeables/farmBuilding/garage/garage.xml" />
+		<storeItem xmlFilename="placeables/farmBuilding/farmShop/farmShop.xml" />
+		<storeItem xmlFilename="placeables/silos/farmSiloBig.xml" />
+		<storeItem xmlFilename="placeables/bunkerSilo/cowSiloDouble.xml" />
+		<storeItem xmlFilename="placeables/workshop/workshop.xml" />
+		<storeItem xmlFilename="placeables/workshop/sellingStationVehicleShop.xml" />
+		<storeItem xmlFilename="placeables/bga/bga.xml" />
+		<storeItem xmlFilename="placeables/bunkerSilo/compostSilo.xml" />
+		<storeItem xmlFilename="placeables/silos/pigFoodStorageSilo.xml" />
+		
+		<!-- Husbandrys -->
+		<storeItem xmlFilename="placeables/animalHusbandry/pigStable_farm.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/chickenHusbandry.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/horseStable.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowHusbandry.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/sheepHusbandry.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/paddock01.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowPasture01.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowPasture02.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/pigStableBig01.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/pigStableBig02.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/pigStableBig03.xml" />
+		
+		<!-- Deco Husbandrys -->
+		<storeItem xmlFilename="placeables/animalHusbandry/chickenDeco01.xml" />	
+		<storeItem xmlFilename="placeables/animalHusbandry/horseRanchPaddock.xml" />	
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer_chickenDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer_cowDeco.xml" />	
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer_horseDeco.xml" />	
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer_pigDeco.xml" />	
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer_sheepDeco.xml" />	
+		
+		<!-- BuyingStations -->
+		<storeItem xmlFilename="placeables/buyingStations/gasStation01.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/fertilizerSilo.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/limeSilo.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/seedsSilo.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/allInOneSiloTriggerRaiffeisen.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/beltSystem_AnimalDealer.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/allInOneSiloTriggerAnimalDealer.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/allInOneSiloTriggerGrainMill.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/liquidFertilizerTank.xml" />
+		<storeItem xmlFilename="placeables/buyingStations/liquidManureBuyingStation.xml" />
+		<storeItem xmlFilename="placeables/waterFillTriggers/waterFillTriggers.xml" />		
+		
+		<!-- Selling Points -->
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_horseRanch.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_raiffeisen.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_inn.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_dairy.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_grainMill.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_spinnery.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingStationWoodChips.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPointWood.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_skinner.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/sellingPoint_animalDealer.xml" />
+		
+		<!-- Selling Points Households -->
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household01.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household02.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household03.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household04.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household05.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household06.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household07.xml" />
+		<storeItem xmlFilename="placeables/sellingPoints/households/sellingPoint_household08.xml" />
+
+		<!-- Greenhouses -->
+		<storeItem xmlFilename="placeables/greenhouses/greenhouse01.xml" />
+		<storeItem xmlFilename="placeables/greenhouses/greenhouse02.xml" />
+				
+		<!-- Farm Objects base on Vehicles -->
+		<storeItem xmlFilename="vehicles/fuelStorage/fuelStorage.xml" />
+		<storeItem xmlFilename="vehicles/liquidManureStorage/liquidManureStorage.xml" />
+		<storeItem xmlFilename="vehicles/hayBarn/hayBarn.xml" />
+		<storeItem xmlFilename="vehicles/hayDryer/hayDryer.xml" />
+		<storeItem xmlFilename="vehicles/hayDryer/hayDryer_overloadModul.xml" />
+		<!-- <storeItem xmlFilename="vehicles/baleStorages/squareBaleStorage.xml" />
+		<storeItem xmlFilename="vehicles/baleStorages/roundBaleStorage.xml" />
+		<storeItem xmlFilename="vehicles/baleStorages/roundBaleStorageSilage.xml" /> -->
+		<storeItem xmlFilename="vehicles/storageSilos/universalStorageSilo.xml" />
+		<storeItem xmlFilename="vehicles/vertiMixer/vertiMixTMR.xml" />
+		<storeItem xmlFilename="vehicles/vertiMixer/vertiMixPigFood.xml" />
+		<storeItem xmlFilename="vehicles/productions/grainMill.xml" />
+		<storeItem xmlFilename="vehicles/seedMaster/seedMaster.xml" />
+		<storeItem xmlFilename="vehicles/fixFerm/fixFerm.xml" />
+		<storeItem xmlFilename="vehicles/bigBagFillingStation/bigBagFillingStation.xml" />
+		<storeItem xmlFilename="vehicles/storageSilos/milkStorageTank.xml" />  <!-- Part from Cheesehouse -->
+		
+		<!-- Company Property Vehicles -->
+		<storeItem xmlFilename="vehicles/companyPropertyVehicles/mc18.xml" />
+		
+		<!-- Vehicles -->
+		<storeItem xmlFilename="vehicles/siloHopper/siloHopper.xml" />
+		<storeItem xmlFilename="vehicles/butterMax/butterMax.xml" />
+		<storeItem xmlFilename="vehicles/betimax/joskinBetimaxRDS7500.xml" />
+		<storeItem xmlFilename="vehicles/bigBagLifter/bigBagLifter.xml"/>
+		
+		<!-- Objects -->
+		<storeItem xmlFilename="objects/buyableBales/buyableBales_dryGrass.xml" />
+		<storeItem xmlFilename="objects/buyableBales/buyableBales_dryGrassRound.xml" />
+		<storeItem xmlFilename="objects/pallets/cheese/cheese.xml" />
+		<storeItem xmlFilename="objects/pallets/eggBox/eggBox.xml" />
+		<storeItem xmlFilename="objects/pallets/milkCan/milkCan.xml" />
+		<storeItem xmlFilename="objects/pallets/woolBale/woolBale.xml" />
+		<storeItem xmlFilename="objects/pallets/seedStainTank/seedStainTank.xml" />
+		
+		<storeItem xmlFilename="objects/pallets/deadPig/deadPig.xml" />
+		<storeItem xmlFilename="objects/crates/fillableBox.xml" />
+		<storeItem xmlFilename="objects/crates/fillableBoxSmall.xml" />
+		<storeItem xmlFilename="objects/crates/fillableWoodBox.xml" />
+		<storeItem xmlFilename="objects/crates/cagebox.xml" />
+		<storeItem xmlFilename="objects/buckets/fillableBucket.xml" />
+		<storeItem xmlFilename="objects/barrels/fillableButterBarrel.xml" />
+		<storeItem xmlFilename="objects/pallets/transportPallet/transportPallet.xml" />
+		<storeItem xmlFilename="objects/misc/duckBathtub.xml" />
+		
+		<storeItem xmlFilename="objects/pallets/potatoBag/potatoBag.xml" />
+		<storeItem xmlFilename="objects/pallets/woodChipsBag/woodChipsBag.xml" />
+		
+		<!-- BigBags Buyable -->
+		<storeItem xmlFilename="objects/bigBags/bigBagForage.xml" />
+		<storeItem xmlFilename="objects/bigBags/bigBagWholeGrain.xml" />
+		<storeItem xmlFilename="objects/bigBags/bigBagSeeds.xml"/>
+		<storeItem xmlFilename="objects/bigBags/bigBagFertilizer.xml"/>
+		<storeItem xmlFilename="objects/bigBags/bigBagLime.xml"/>
+		<storeItem xmlFilename="objects/bigBags/bigBagChickenFood.xml"/>
+		<storeItem xmlFilename="objects/bigBags/bigBagPigFood.xml"/>
+		<storeItem xmlFilename="objects/bigBags/bigBagHorseFood.xml"/>
+		
+		<!-- BigBags Fillable -->
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagChickenFoodEmpty.xml"/>
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagFertilizerEmpty.xml" />
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagForageEmpty.xml" />
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagHorseFoodEmpty.xml" />
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagLimeEmpty.xml" />
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagPigFoodEmpty.xml" />
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagSeedsEmpty.xml"/>
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagWholeGrainEmpty.xml"/>
+		<storeItem xmlFilename="objects/bigBagsFillable/bigBagWholeGrainMill.xml" />
+	
+		<!-- Placeables -->
+		<storeItem xmlFilename="placeables/silos/universalSilo.xml" />
+	
+		<!-- Misc -->
+		<storeItem xmlFilename="placeables/highPressureWasher/kaercher.xml" />  <!-- Gas Station Washboxes -->
+		<storeItem xmlFilename="character/horse/horse.xml" />  
+		<storeItem xmlFilename="placeables/productions/cheeseProduction.xml" />
+		
+
+		<!-- Developer Test Objects -->
+		<!--<storeItem xmlFilename="placeables/buyingStations/farmSiloSmall.xml" />  TEST SILO -->
+		
+    </storeItems>
+	
+
+</modDesc>
