@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<l10n>
+	<texts>
+		<!-- Misc -->
+		<text name="HofBergmann" text="HofBergmann" />
+		<text name="closedText_default" text="Zamknięte, wróć później!" />
+		<text name="category_crates" text="Skrzynie" />
+		<text name="category_productions" text="Urządzenia produkcyjne" />
+		<text name="category_miscObjects" text="Różne" />
+		<text name="category_fruitTrees" text="Drzewa owocowe" />
+		<text name="ui_vehicleReset" text="Pojazd/maszyna została zresetowana na farmę!" />
+		<text name="ui_failedVehicleReset" text="Nie można odstawić pojazdu lub narzędzia. Przy sklepie nie ma wolnego farmę!" />
+		<text name="hofBergmann_hint01" text="© 2019-2020 LSFM Wszelkie prawa zastrzeżone. Wsparcie i info o mapie na www.lsfarming-mods.com" />
+		
+		<!-- Actions -->
+		<text name="action_openDoorTop" text="Otwórz górne drzwi" />
+		<text name="action_closeDoorTop" text="Zamknij górne drzwi" />
+		<text name="action_openDoorBottom" text="Otwórz dolne drzwi" />
+		<text name="action_closeDoorBottom" text="Zamknij dolne drzwi" />
+		<text name="action_openAtticDoor" text="Otwórz właz strychu" />
+		<text name="action_closeAtticDoor" text="Zamknij właz strychu" />
+		<text name="action_openAtticGate" text="Otwórz drzwi strychu" />
+		<text name="action_closeAtticGate" text="Zamknij drzwi strychu" />
+		<text name="action_openSlurryPit" text="Otwórz zbiornik gnojowicy" />
+		<text name="action_closeSlurryPit" text="Zamknij zbiornik gnojowicy" />
+		<text name="action_liftUp" text="Podnieś półkę" />
+		<text name="action_lowerDown" text="Opuść półkę" />
+		<text name="action_rollGateliftUp" text="Otwórz bramę" />
+		<text name="action_rollGatelowerDown" text="Zamknij bramę" />
+		<text name="action_fanStart" text="Włącz wentylację" />
+		<text name="action_fanStop" text="Wyłącz wentylację" />
+		<text name="action_openElectroFence" text="Otwórz ogrodzenie" />
+		<text name="action_closeElectroFence" text="Zamknij ogrodzenie" />
+		<text name="action_cheeseMakerOn" text="Włącz maszynę do sera" />
+		<text name="action_cheeseMakerOff" text="Wyłącz maszynę do sera" />
+		<text name="action_openBunkerPlanks" text="Umieść deski" />
+		<text name="action_closeBunkerPlanks" text="Usuń deski" />
+		<text name="action_activateTrailerFilling" text="Zezwól na napełnianie przyczepy" />
+		<text name="action_deactivateTrailerFilling" text="Zablokuj napełnianie przyczepy" />
+		
+		<!-- Filltypes -->
+		<text name="fillType_clover" text="Koniczyna" />
+		<text name="fillType_compost" text="Kompost" />
+		<text name="fillType_biomass" text="Biomasa" />
+		<text name="fillType_wholeGrain" text="Śruta" />
+		<text name="fillType_deadAnimal" text="Truchło" />
+		<text name="fillType_rubinTT" text="Rubin® TT (zaprawa)" />
+		<text name="fillType_cheese" text="Ser" />
+		<text name="fillType_butter" text="Masło" />
+		<text name="fillType_fertiPro" text="fertiPro®" />
+		<text name="fillType_badmixture" text="Bad Mix" />
+		<text name="fillType_nitrogen" text="Azot" />
+		<text name="fillType_phosphor" text="Fosfor" />
+		<text name="fillType_potassium" text="Potas" />
+		<text name="fillType_beefProducts" text="Cielęcina" />
+		<text name="fillType_porkProducts" text="Wieprzowina" />
+		<text name="fillType_poultryProducts" text="Drób" />
+		<text name="fillType_sheepProducts" text="Baranina" />
+		<text name="fillType_apple" text="Jabłko" />
+		<text name="fillType_pear" text="Gruszka" />
+		
+		<!-- Stations -->
+		<text name="station_animalDealer" text="Sprzedawca zwierząt" />
+		<text name="station_seedsSilo" text="Silos na wapno" />
+		<text name="station_liquidManureStation" text="Skup gnojowicy" />
+		<text name="station_raiffeisen" text="Raiffeisen" />
+		<text name="station_grainMill" text="Młyn zbożowy" />
+		<text name="station_horseRanch" text="Ranczo koni" />
+		<text name="station_inn" text="Zajazd" />
+		<text name="station_carpentery" text="Stolarnia" />
+		<text name="station_skinner" text="Punkt utylizacji" />
+		<text name="station_farmShop" text="Sklep gospodarstwa" />
+		<text name="station_chemicalTank" text="Zbiornik chemikaliów" />
+		<text name="station_fertilizerTank" text="Nawozu" />
+		
+		<!-- Stations Households -->
+		<text name="station_household01" text="Dom rodziny Ritter" />
+		<text name="station_household02" text="Dom rodziny Freisler" />
+		<text name="station_household03" text="Dom rodziny Miller" />
+		<text name="station_household04" text="Dom rodziny Meyer" />
+		<text name="station_household05" text="Dom rodziny Geis" />
+		<text name="station_household06" text="Dom rodziny Schroeder" />
+		<text name="station_household07" text="Dom rodziny Lehmann" />
+		<text name="station_household08" text="Dom rodziny Schreiber" />
+		
+		<!-- Hot Spots -->
+		<text name="hotSpot_vehicleShop" text="Dealer" />
+		<text name="hotSpot_cowPastureA" text="Pastwisko krów A" />
+		<text name="hotSpot_cowPastureB" text="Pastwisko krów B" />
+		<text name="hotSpot_pigbreedingPlants" text="Ferma tuczników" />
+		<text name="hotSpot_biogasPlant" text="Biogazownia" />
+		<text name="hotSpot_forestArea1" text="Obszar wycinki 1" />
+		<text name="hotSpot_forestArea2" text="Obszar wycinki 2" />
+		<text name="hotSpot_animalDealer" text="Sprzedawca zwierząt" />
+		<text name="hotSpot_liquidManurePit" text="Zbiornik gnojowicy" />
+		<text name="hotSpot_dairy" text="Mleczarnia" />
+		<text name="hotSpot_grainMill" text="Młyn zbożowy" />
+		<text name="hotSpot_spinnery" text="Tkalnia" />
+		<text name="hotSpot_inn" text="Zajazd" />
+		<text name="hotSpot_veggieFarm" text="Farma warzywna" />
+		<text name="hotSpot_carpentery" text="Stolarnia" />
+		<text name="hotSpot_skinner" text="Punkt utylizacji" />
+		<text name="hotSpot_horseRanch" text="Ranczo koni" />
+		<text name="hotSpot_cheeseDairy" text="Serowarnia" />
+		
+		<!-- Animals -->
+		<text name="animal_cowStable" text="Obora (Farma)" />
+		<text name="animals_cowPasture01" text="Pastwisko krów A" />
+		<text name="animals_cowPasture02" text="Pastwisko krów B" />
+		<text name="animals_horseRanch" text="Ranczo koni" />
+		<text name="animals_horsePaddockA" text="Padok A" />
+		<text name="animal_pigStableBig01" text="Chlew 1" />
+		<text name="animal_pigStableBig02" text="Chlew 2" />
+		<text name="animal_pigStableBig03" text="Chlew 3" />
+		<text name="shopItem_deadAnimal" text="Truchło" />
+		<text name="fillTypeGroup_power" text="Pasza treściwa" />
+		<text name="shopItem_goatBrown" text="Koza (brązowa)" />
+		<text name="shopItem_goatWhite" text="Koza (biała)" />
+		<text name="shopItem_goatGrey" text="Koza (szara)" />
+		<text name="shopItem_goatBlack" text="Koza (czarna)" />
+		<text name="fillType_goat" text="Koza" />
+		<text name="shopItem_ramBlack" text="Baran" />
+		<text name="fillType_ram" text="Baran" />
+		<text name="shopItem_duckBrown" text="Kaczka (brązowa)" />
+		<text name="shopItem_duckWhite" text="Kaczka (biała)" />
+		<text name="shopItem_duckBlack" text="Kaczka (czarna)" />
+		<text name="fillType_duck" text="Kaczka" />
+		<text name="shopItem_pigletRed" text="Prosię (różowe)" />
+		<text name="shopItem_pigletWhite" text="Prosię (białe)" />
+		<text name="shopItem_pigletBlackWhite" text="Prosię (czarno-białe)" />
+		<text name="shopItem_pigletBlack" text="Prosię (czarne)" />
+		<text name="fillType_piglet" text="Prosię" />
+		<text name="shopItem_pig2Red" text="Tucznik (różowy)" />
+		<text name="shopItem_pig2White" text="Tucznik (biały)" />
+		<text name="shopItem_pig2BlackWhite" text="Tucznik (czarno-biały)" />
+		<text name="shopItem_pig2Black" text="Tucznik (czarny)" />
+		<text name="fillType_pig2" text="Tucznik" />
+		<text name="ui_statisticView_pig2" text="Tuczniki" />
+		<text name="animal_calfZone" text="Strefa cielęca" />
+		<text name="fillType_calf" text="Cielę" />
+		<text name="shopItem_calfBlackWhite" text="Cielę (czarno-białe)" />
+		<text name="shopItem_calfBlack" text="Cielę (czarne)" />
+		<text name="shopItem_calfBrown" text="Cielę (brązowe)" />
+		
+		<!-- Objects -->
+		<text name="shopItem_bigBagWholeGrain" text="Big-Bag śruty" />
+		<text name="function_bigBagWholeGrain" text="Potrzebny do produkcji paszy dla świń." />
+		<text name="shopItem_bigBagForage" text="Big-Bag paszowy" />
+		<text name="function_bigBagForage" text="Koncentrat dla bydła." />
+		<text name="function_rubinTT" text="Rubin® TT jest zaprawą do nasion zbóż do wykrywania chorób nasion i gleby. Służy jako zaprawa do nasion do SeedMaster™." />
+		<text name="shopItem_fillableBox" text="Skrzynia plastikowa" />
+		<text name="function_fillableBox" text="Plastikowa skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: widły do palet, ręcznie (gdy są puste)." />
+		<text name="shopItem_fillableBoxSmall" text="Skrzynia plastikowa (mała)" />
+		<text name="function_fillableBoxSmall" text="Plastikowa skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: widły do palet lub ręcznie ze względu na mały rozmiar." />
+		<text name="shopItem_fillableWoodBox" text="Skrzynia drewniana" />
+		<text name="function_fillableWoodBox" text="Drewniana skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: ręcznie." />
+		<text name="shopItem_fillableCagebox" text="Skrzynia siatkowa" />
+		<text name="function_fillableCagebox" text="Siatkowa skrzynia wielokrotnego użytku, napełnienie: łycha lub przyczepa (zalecane zsypem ziarna). Transport: widły do palet." />
+		<text name="shopItem_fillableBucket" text="Wiadro" />
+		<text name="function_fillableBucket" text="Potrzebny do produkcji masła i sera w mleczarni." />
+		<text name="shopItem_fillableButterBarrel" text="Baryłka do masła" />
+		<text name="function_fillableButterBarrel" text="Jest potrzebna do produkcji masła." />
+		<text name="shopItem_duckBathtub" text="Wanna do kaczek" />
+		<text name="function_duckBathtub" text="Płaska wanna, ozdoba zagrody dla kur/kaczek. Może być wypełniona wodą." />
+		<text name="shopItem_transportPallet" text="Paleta" />
+		<text name="function_transportPallet" text="Palety mogą być używane do transportu przedmiotów. Ładunek można zabezpieczyć pasami." />
+		<text name="palletState" text="Status" />
+		<text name="newPallet" text="Nowa" />
+		<text name="oldPallet" text="Używana" />
+		<text name="shopItem_potatoBag" text="Worek ziemniaków" />
+		<text name="shopItem_woodChipsBag" text="Worek z wiórami" />
+		<text name="shopItem_milkCanFillable" text="Kana" />
+		<text name="function_milkCanFillable" text="Kany służą do transportu i przechowywania mleka. Kana jest wielokrotnego użytku." />
+		<text name="shopItem_fruitBoxFillable" text="Skrzynia na owoce" />
+		<text name="function_fruitBoxFillable" text="Ta skrzynia jest potrzebna do zbioru owoców, jest ona zwrotna (nie zostaje sprzedawana, gdy towary są sprzedawane)." />
+		<text name="shopItem_appleTree" text="Jabłoń" />
+		<text name="shopItem_pearTree" text="Grusza" />
+		<text name="function_fruitTrees" text="Drzewa owocowe mogą być umieszczone na mapie, przy odrobinie szczęścia drzewo może wydać owoce." />
+		
+		<!-- Fertilizer/Compost Expansion -->
+		<text name="shopItem_bigBagFertiPro" text="fertiPro® Big-Bag granulatu" />
+		<text name="function_bigBagFertiPro" text="fertiPro® jest nawozem granulowanym i służy do produkcji nawozów płynnych w FertiMixer™" />
+		<text name="shopItem_fertiMixerLQ" text="FertiMixerLQ™" />
+		<text name="function_fertiMixerLQ" text="Mobilna stacja mieszania do produkcji płynnego nawozu. Do produkcji wymagana jest woda i granulat fertiPro. Dopasowany zaczep do ładowacza czołowego ułatwia transport." />
+		<text name="shopItem_fertiMixerSLD" text="FertiMixerSLD™" />
+		<text name="function_fertiMixerSLD" text="Mobilna stacja mieszania do produkcji nawozu stałego. Do produkcji potrzebne są następujące surowce: azot (N), fosfor (P) i potas (K). Zaczep do ładowacza czołowego ułatwia transport FertiMixer." />
+		<text name="shopItem_ingredientsDispenser" text="Silos dozujący" />
+		<text name="function_ingredientsDispenser" text="Kupowany silos dozzujący na zakupione surowce potrzebne do produkcji nawozów stałych." />
+		<text name="shopItem_compostMaster" text="CompostMaster™" />
+		<text name="function_compostMaster" text="Mobilna stacja mieszania do produkcji kompostu. Do produkcji można wykorzystać prawie wszystkie materiały organiczne. Zaczep do ładowacza czołowego ułatwia transport CompostMaster." />
+		<text name="enterText_fertiMixerLQ" text="Obsługa FertiMixerLQ" />
+		<text name="enterText_fertiMixerSLD" text="Obsługa FertiMixerSLD" />
+		<text name="enterText_compostMaster" text="Obsługa CompostMaster" />
+		
+		<!-- Base on Vehicles -->
+		<text name="shopItem_hayBarn" text="Dmuchawa do słomy" />
+		<text name="enterText_haybarn" text="Obsługa dmuchawy do słomy" />
+		<text name="typeDesc_automaticHayBarn" text="Dmuchawa do słomy" />
+		<text name="enterText_vertiMix" text="Obsługa VertiMix" />
+		<text name="NEEDED_MIXING_TIME" text="Czas przetwarzania:" />
+		<text name="headerText_vertimixTMR" text="Stosunek mieszanki (TMR):" />
+		<text name="headerText_vertimixPIG" text="Stosunek mieszanki (pasza dla świń):" />
+		<text name="info_tipSidePipe" text="Rura wyładowcza" />
+		<text name="info_tipSideSilo" text="Przeładunek do silosu z paszą dla świń" />
+		<text name="shopItem_fixFerm" text="FixFermenter" />
+		<text name="enterText_fixFerm" text="Obsługa FixFermenter" />
+		<text name="headerText_fixFerm" text="FixFermenter" />
+		<text name="enterText_baleStorage" text="Obsługa stogu bel" />
+		<text name="enterText_seedMaster" text="Obsługa SeedMaster" />
+		<text name="shopItem_grainMill" text="Młyn zbożowy" />
+		<text name="enterText_grainMill" text="Porozmawiaj z Millerem" />
+		<text name="headerText_grainMill" text="Proces produkcji młyna zbożowego:" />
+		<text name="shopItem_hayDryer" text="Suszarnia do siana" />
+		<text name="typeDesc_hayDryer" text="Suszarnia do siana" />
+		<text name="enterText_hayDryer" text="Obsługa suszarni do siana" />
+		<text name="headerText_hayDryer" text="Suszarnia do siana" />
+		<text name="motor_hayDryer" text="Suszarnia do siana" />
+		<text name="shopItem_hayDryerOverloadModul" text="Moduł przeładunkowy suszarni do siana" />
+		<text name="switch_to_english" text="Zmień język panelu na angielski" />
+		<text name="switch_to_german" text="Zmień język panelu na niemiecki" />
+		<text name="info_tipSideDryer" text="Wyładunek komory suszenia" />
+		<text name="info_tipSideStorage" text="Wyładunek komory zmagazynowanego siana" />
+		<text name="info_tipSideOverload" text="Przeładunek do komory magazynującej" />
+		<text name="enterText_bigBagMax" text="Obsługa Big-Bag Max" />
+		<text name="enterText_milkingParlour" text="Obsługa hali udojowej" />
+		<text name="shopItem_milkingParlour" text="hala udojowa" />
+		<text name="typeDesc_milkingParlour" text="hala udojowa" />
+		<text name="motor_milkingParlour" text="hala udojowa" />
+		<text name="enterText_milkRobot" text="Obłsuga robota udojoweg" />
+		<text name="shopItem_milkRobot" text="robot udojowy" />
+		<text name="typeDesc_milkRobot" text="robot udojowy" />
+		<text name="motor_milkRobot" text="robot udojowy" />
+		<text name="function_fordTransit" text="Możesz użyć furgonetki dostawczej do transportu towarów i drobnicy. Możliwe inne konfiguracje w sklepie." />
+		<text name="typeDesc_fordTransit" text="Ford Transit" />
+		
+		<!-- Vehicle Storages -->
+		<text name="shopItem_universalStorageSilo" text="Silos uniwersalny" />	
+		<text name="shopItem_milkStorageTank" text="Zbiornik na mleko" />	
+		
+		<!-- Vehicles -->	
+		<text name="function_siloHopper" text="Służy do napełniania stacjonarnych silosów magazynowych na mapie Hof Bergmann." />
+		<text name="shopItem_butterMax" text="Maszyna do masła" />
+		<text name="function_butterMax" text="Używane do robienia masła. Uwaga: Do wypełnienia wyprodukowanego masła potrzebna jest pusta baryłka." />
+		<text name="headerText_butterMax" text="Maszyna do masła" />
+		<text name="enterText_butterMax" text="Obsługa maszyny do masła" />
+		<text name="shopItem_fuelStorage" text="Zbiornik paliwa" />
+		<text name="shopItem_liquidManureStorage" text="Zbiornik gnojówki" />
+		<text name="typeDesc_production" text="Produkcja" />
+		<text name="startFillText_milkingParlour" text="Rozpocznij proces dojenia" />
+		<text name="stopFillText_milkingParlour" text="Zakończ proces dojenia" />
+		<text name="function_livestockTrailerInfo1" text="Przewożone mogą być następujące gatunki zwierząt: świnie 21, świnie hodowlane 68, owce 24 i krowy 14." />	<!-- (Standard LivestockTrailer) -->
+		
+		<!-- Fliegl Animal Transport Pack -->
+		<text name="category_flieglAnimalTransportPack" text="Fliegl Pack do transportu zwierząt" />
+		<text name="name_flieglAnimalTruck" text="TGX 26.000 do transportu zwierząt" />
+		<text name="function_animalTruck" text="Ciężarówka do transportu zwierząt firmy MAN we współpracy z Fliegl." />
+		<text name="name_flieglAnimalTrailer" text="Przyczepa do transportu zwierząt" />
+		<text name="name_flieglAnimalTrailerDS" text="Przyczepa do transportu zwierząt DS" />
+		<text name="function_livestockTrailerInfo2" text="Przewożone mogą być następujące gatunki zwierząt: świnie 12, świnie hodowlane 18, owce 14, krowy 6, cielęta 21, konie 9 i skrznie z drobiem 144." />
+		<text name="function_livestockTrailerInfo3" text="Przewożone mogą być następujące gatunki zwierząt: świnie 9, świnie hodowlane 14, owce 10, krowy 4, cielęta 17, konie 6 i skrznie z drobiem 119." />
+		<text name="unfold_FLAP" text="Otwieranie tylnej klapy" />
+		<text name="fold_FLAP" text="Zamykanie tylnej klapy" />
+		<text name="configuration_backSteering" text="Oś skrętna" />
+		<text name="configuration_cabColor" text="Kolor kabiny" />
+		<text name="configuration_coverColor" text="Kolor plandeki" />
+		<text name="configuration_buildUpColor" text="Kolor zabudowany" />
+		
+		<!-- Big Bag Pack -->
+		<text name="shopItem_bigBagChickenFood1" text="Big-Bag z paszą dla kur" />
+		<text name="shopItem_bigBagHorseFood1" text="Big-Bag z paszą dla koni" />
+		<text name="shopItem_bigBagLifter" text="Podnośnik Big-Bagów" />
+		<text name="typeDesc_bigBagLifter" text="Podnośnik Big-Bagów" />
+		<text name="function_bigBagLifter" text="Zaczepiane narzędzie do podnoszenia i transportu Big-Bagów LSFM. Odpowiednie zaczepy można skonfigurować w sklepie, więc jest kompatybilne ze wszystkimi typami podnośników." />
+		<text name="function_bigBagChickenFood" text="Pszenica jest idealnym pokarmem dla twoich kur." />
+		<text name="configuration_valueBlack" text="Czarny" />
+		
+		<!-- Placeables -->
+		<text name="storageSilo_universal" text="Silos uniwersalny" />
+		<text name="function_storageSilo_universal" text="Silos uniwersalny, może być używany do prawie wszystkich typów ładunków. Pokrywa musi być otwarta, aby napełnić silos." />
+		<text name="storageSilo_pigFood" text="Silos paszy dla świń" />
+		<text name="shopItem_portManhole" text="Szyb odprowadzający" />
+		<text name="function_portManhole" text="Kupowalny szyb odprowadzający, tutaj można usunąć wszystkie płyny. UWAGA!! Zanieczyszczanie środowiska jest karane grzywną." />
+		<text name="function_bunkerSiloExtended" text="Kupowalny silos bunkrowy z włączanym/wyłączanym światłem roboczym." />
+		
+		<!-- Seasons -->
+		<text name="seasons_shopItem_CALF_TYPE_BLACKWHITE" text="Cielę (czarno-białe)" />
+		<text name="seasons_shopItem_CALF_TYPE_BLACK" text="Cielę (czarne)" />
+		<text name="seasons_shopItem_CALF_TYPE_BROWN" text="Cielę (brązowe)" />
+		<text name="seasons_shopItem_RAM_TYPE_BLACK" text="Baran" />
+		<text name="seasons_shopItem_GOAT_TYPE_BROWN" text="Koza (brązowa)" />
+		<text name="seasons_shopItem_GOAT_TYPE_WHITE" text="Koza (biała)" />
+		<text name="seasons_shopItem_GOAT_TYPE_BLACK" text="Koza (czarna)" />
+		<text name="seasons_shopItem_PIG2_TYPE_RED" text="Tucznik (różowy)" />
+		<text name="seasons_shopItem_PIG2_TYPE_WHITE" text="Tucznik (jasny)" />
+		<text name="seasons_shopItem_PIGLET_TYPE_RED" text="Prosię (różowe)" />
+		<text name="seasons_shopItem_PIGLET_TYPE_WHITE" text="Prosię (jasne)" />
+		<text name="seasons_shopItem_PIGLET_TYPE_BLACK_WHITE" text="Prosię (czarno-białe)" />
+		<text name="seasons_shopItem_PIGLET_TYPE_BLACK" text="Prosię (czarne)" />
+		<text name="seasons_shopItem_DUCK_TYPE_BROWN" text="Kaczka (brązowa)" />
+		<text name="seasons_shopItem_DUCK_TYPE_WHITE" text="Kaczka (biała)" />
+		<text name="seasons_shopItem_DUCK_TYPE_BLACK" text="Kaczka (czarna)" />
+		
+		<!-- GlobalCompany -->
+		<text name="gc_cheeseFactory" text="Serowarnia" />
+		<text name="gc_cheeseFactoryDesc" text="W serowarni możesz zrobić własny ser." />
+		<text name="gc_cheeseFactory_input1" text="Zbiornik na mleko" />
+		<text name="gc_cheeseFactory_productLine" text="Produkcja sera" />
+		<text name="gc_cheeseFactory_inputsHeaderTitle" text="Towar" />
+		<text name="gc_cheeseFactory_outputsHeaderTitle" text="Bochenki serowe" />
+		
+		<text name="gc_grainMill" text="Młyn zbożowy" />
+		<text name="gc_grainMillDesc" text="Tutaj możesz zmielić ziarno na mąkę." />
+		<text name="gc_grainMill_input1" text="Przyjmowane towary:" />
+		<text name="gc_grainMill_productLine" text="Produkcja mąki" />
+		<text name="gc_grainMill_inputsHeaderTitle" text="Zapotrzebowanie" />
+		<text name="gc_grainMill_outputsHeaderTitle" text="Produkt" />
+		
+		<text name="gc_slaughterHouse" text="Rzeźnia" />
+		<text name="gc_slaughterHouseDesc" text="Do rzeźni można dostarczać zwierzęta, w zależności od gatunku zwierząt, można produkować różne rodzaje mięsa, które uzyskują inną cenę sprzedaży. Produkty można sprzedawać w sklepie rolniczym. Cielęcina: cielęta. Wieprzowina: świnie i tuczniki. Drób: kurczaki i kaczek. Baranina: owce i kozy." />
+		<text name="gc_slaughterHouse_input1" text="Cielaki:" />
+		<text name="gc_slaughterHouse_input2" text="Świnie:" />
+		<text name="gc_slaughterHouse_input3" text="Kury/Kaczki:" />
+		<text name="gc_slaughterHouse_input4" text="Owce/Kozy:" />
+		<text name="gc_slaughterHouse_productLine1" text="Produkcja cielęciny" />
+		<text name="gc_slaughterHouse_productLine2" text="Produkcja wieprzowiny" />
+		<text name="gc_slaughterHouse_productLine3" text="Produkcja drobiu" />
+		<text name="gc_slaughterHouse_productLine4" text="Produkcja baraniny" />
+		<text name="gc_slaughterHouse_inputsHeaderTitle" text="Zwierzęta" />
+		<text name="gc_slaughterHouse_outputsHeaderTitle" text="Produkt" />
+		
+		<text name="gc_fruitTreesDesc" text="Drzewa owocowe potrzebują wody, aby wydać owoce." />
+		<text name="gc_appleTree" text="Jabłoń" />
+		<text name="gc_appleTree_input1" text="Woda:" />
+		<text name="gc_appleTree_productLine" text="Jabłoń" />
+		<text name="gc_appleTree_inputsHeaderTitle" text="Towar" />
+		<text name="gc_appleTree_outputsHeaderTitle" text="Owoce" />
+		
+		<text name="gc_pearTree" text="Grusza" />
+		<text name="gc_pearTree_input1" text="Woda:" />
+		<text name="gc_pearTree_productLine" text="Grusza" />
+		<text name="gc_pearTree_inputsHeaderTitle" text="Towar" />
+		<text name="gc_pearTree_outputsHeaderTitle" text="Owoce" />
+		
+		<!-- Object Storages by GTX - BaleStorages -->
+		<text name="category_baleStorages" text="Stóg bel" />
+		<text name="ui_nextObjectLevel" text="Następny obiekt" />
+		<text name="shopItem_roundBaleStorageStraw" text="Stóg bel okrągłych (słoma)" />
+		<text name="function_roundBaleStorageStraw" text="Stóg bel dla okrągłych bel słomy. Infomacja: Nie zawiera bel." />
+		<text name="shopItem_roundBaleStorageHayHB" text="Stóg bel okrągłych (siano)" />
+		<text name="function_roundBaleStorageHay" text="Stóg bel dla okrągłych bel siana. Infomacja: Nie zawiera bel." />
+		<text name="shopItem_roundBaleStorageSilage" text="Stóg bel okrągłych (kiszonka)" />
+		<text name="function_roundBaleStorageSilage" text="Stóg bel dla okrągłych bel kiszonki. Infomacja: Nie zawiera bel." />
+		<text name="shopItem_squareBaleStorageHayHB" text="Stóg bel kwadratowych (siano)" />
+		<text name="function_squareBaleStorageHay" text="Stóg bel dla kwadratowych bel siana. Infomacja: Nie zawiera bel." />
+		<text name="shopItem_squareBaleStorageStraw" text="Stóg bel kwadratowych (słoma)" />
+		<text name="function_squareBaleStorageStraw" text="Stóg bel dla kwadratowych bel słomy. Infomacja: Nie zawiera bel." />
+		<text name="shopItem_squareBaleStorageSilage" text="Stóg bel kwadratowych (kiszonka)" />
+		<text name="function_squareBaleStorageSilage" text="Stóg bel dla kwadratowych bel kiszonki. Infomacja: Nie zawiera bel." />
+		<text name="shopItem_squareBaleStorageStrawHS" text="Stóg bel kwadratowych (słoma) - Strych" />
+		<text name="input_BALEMENU" text="Menu stogu bel" />
+		
+		<!-- Object Storages by GTX - BigBag Shelf -->
+		<text name="shopItem_bigBagShelf" text="Półka Big-Bagów" />
+		<text name="input_BIGBAGSHELFMENU" text="Menu zarządzania Big-Bagami" />
+		<text name="unit_bigBags" text="Big-Bagi" />
+		<text name="shopItem_woolShelf" text="Półka z belami wełny" />
+		<text name="input_WOOLBALEMENU" text="Menu zarządzania belami wełny" />
+		<text name="unit_woolBales" text="Bele wełny" />
+		<text name="shopItem_cheeseShelf" text="Półka z serami" />
+		<text name="input_CHEESESHELFMENU" text="Menu zarządzania półką z serami" />
+		<text name="unit_cheeseLoaves" text="Bochenek sera" />
+	
+		<!-- Greenhouses -->
+		<text name="shopItem_lsfm_greenhouseLettuce" text="Szklarnia sałaty" />
+		<text name="shopItem_lsfm_greenhouseTomatoes" text="Szklarnia pomidorów" />
+		<text name="shopItem_lsfm_greenhouseRedPeppers" text="Szklarnia czerwonej papryki" />
+		<text name="function_lsfm_greenHouses" text="Szklarnie potrzebują wody i obornika/kompostu (zależne od mapy), sadzonki są potrzebne do uprawy sałaty. Zbiór odbywa się za pomocą małych poręcznych skrzynek na warzywa. Warzywa można sprzedawać w odpowiednim punkcie sprzedaży." />
+		<text name="shopItem_lsfm_salesBooth" text="Stoisko z warzywami" />
+		<text name="function_lsfm_salesBooth" text="Stoisko sprzedażowe na warzywa. Tutaj możesz sprzedawać wyhodowane warzywa ze szklarni. Uwaga, dostarczone towary nie są sprzedawane bezpośrednio, ale w ciągu dnia. Pieniądze zostaną przelane na koniec dnia." />
+		<text name="fillType_lettuce" text="Sałata" />
+		<text name="fillType_tomato" text="Pomidor" />
+		<text name="fillType_redPepper" text="Czerwona papryka" />
+		<text name="fillType_lettuceSeedlings" text="Sadzonki sałaty" />
+		<text name="shopItem_seedlingsPallet_lettuce" text="Sadzonki sałaty" />
+		<text name="function_seedlingsPallet_lettuce" text="Sadzonki sałatki są potrzebne do uprawy sałaty. Do stosowania w szklarniach LSFM." />
+		<text name="shopItem_vegetablesBoxFillable" text="Skrzynia na warzywa" />
+		<text name="function_vegetablesBoxFillable" text="Skrzynia służy do zbioru warzyw, jest to skrzynia zwrotna (nie jest sprzedawane z towarem)." />
+		<text name="configuration_valueVegetablesGroup1" text="Sałata" />
+		<text name="configuration_valueVegetablesGroup2" text="Pomidor/Czerwona papryka" />
+		<text name="shopItem_vegetablesCardBoardFillable" text="Karton na warzywa" />
+		<text name="function_vegetablesCardBoardFillable" text="Kartony służą do zbioru papryki i pomidorów, jest to karton zwrotny (nie jest sprzedawane z towarem)." />
+		<text name="lsfmGreenhousePack_greenhouseLettuce" text="Szklarnia sałaty"/>
+		<text name="lsfmGreenhousePack_greenhouseTomatoes" text="Szklarnia pomidorów"/>
+		<text name="lsfmGreenhousePack_greenhouseRedPeppers" text="Szklarnia czerwonej papryki"/>
+		<text name="lsfmGreenhousePack_greenhouseLettuceDesc" text="Szklarnia z sałatą. Wymaga sadzonek, wody i obornika/kompostu (zależne od mapy). Do zbioru potrzeba kilku skrzynek na warzywa. Dojrzałe warzywa można sprzedawać w odpowiednim punkcie sprzedaży. Wskazówki: Sadzonki i skrzynki na warzywa są dostępne w sklepie. Aby rozpocząć zbiór, po prostu umieść skrzynkę na korytarzu szklarni wtedy zobaczysz informację w oknie pomocy 'Rozpocznij napełnianie'. Jeśli zbiór nie postępuje, oznacza to że w przejściu jest za dużo skrzynek."/>
+		<text name="lsfmGreenhousePack_greenhouseTomatoDesc" text="Szklarnia z pomidorami. Wymaga sadzonek, wody i obornika/kompostu (zależne od mapy). Pomidory rosną cały czas, ale potrzebują czasu, aby się zregenerować po zaopatrzeniu w wodę. Do zbioru potrzebne są skrzynki lub kartony na warzywa. Dojrzałe warzywa można sprzedawać w odpowiednim punkcie sprzedaży. Wskazówki: Sadzonki i skrzynki na warzywa są dostępne w sklepie. Aby rozpocząć zbiór, po prostu umieść skrzynkę na korytarzu szklarni wtedy zobaczysz informację w oknie pomocy 'Rozpocznij napełnianie'. Jeśli zbiór nie postępuje, oznacza to że w przejściu jest za dużo skrzynek."/>
+		<text name="lsfmGreenhousePack_greenhouseRedPepperDesc" text="Szklarnia z czerwoną papryką. Wymaga sadzonek, wody i obornika/kompostu (zależne od mapy). Papryka rośnie cały czas, ale potrzebuje trochę czasu na regenerację po zaopatrzeniu w wodę. Do zbioru potrzebne są skrzynki lub kartony warzywne. Dojrzałe warzywa można sprzedawać w odpowiednim punkcie sprzedaży. Wskazówki: Sadzonki i skrzynki na warzywa są dostępne w sklepie. Aby rozpocząć zbiór, po prostu umieść skrzynkę na korytarzu szklarni wtedy zobaczysz informację w oknie pomocy 'Rozpocznij napełnianie'. Jeśli zbiór nie postępuje, oznacza to że w przejściu jest za dużo skrzynek."/>
+		<text name="lsfmGreenhousePack_greenhouse_inputsHeaderTitle" text="Zasoby"/>
+		<text name="lsfmGreenhousePack_greenhouse_outputsHeaderTitle" text="Gotowość do zbioru"/>
+		<text name="lsfmGreenhousePack_greenhouse_input1" text="Sadzonki"/>
+		<text name="lsfmGreenhousePack_greenhouse_input2" text="Woda"/>
+		<text name="lsfmGreenhousePack_greenhouse_input3" text="Obornik/Kompost"/>
+		<text name="lsfmGreenhousePack_greenhouseLettuce_productLine" text="Szklarnia sałaty"/>
+		<text name="lsfmGreenhousePack_greenhouseTomatoes_productLine" text="Szklarnia pomidorów"/>
+		<text name="lsfmGreenhousePack_greenhouseRedPeppers_productLine" text="Szklarnia czerwonej papryki"/>
+		<text name="lsfmGreenhousePack_salesBooth" text="Stoisko z warzywami"/>
+		<text name="lsfmGreenhousePack_salesBoothDesc" text="Na tym stoisku możesz sprzedać swoje wyhodowane warzywa w szklarniach. Uwaga, dostarczone towary nie będą sprzedawane bezpośrednio, ale w ciągu dnia. Pieniądze zostaną przelane na koniec dnia."/>
+		<text name="lsfmGreenhousePack_salesBooth_inputsHeaderTitle" text="Dostarczone towary:"/>
+		<text name="lsfmGreenhousePack_salesBooth_outputsHeaderTitle" text="Sprzedane:"/>
+		<text name="lsfmGreenhousePack_salesBooth_input" text="Dostarczone warzywa"/>
+		<text name="lsfmGreenhousePack_salesBooth_productLine" text="Stoisko z warzywami"/>
+		<text name="salesBooth_productSale" text="Wpływy"/>
+		
+		<!-- Rainwater Storage Tank -->
+		<text name="shopItem_rainWaterStorage" text="Zbiornik na deszczówkę" />
+		<text name="function_rainWaterStorage" text="Zbiornik ten służy do zbierania wody deszczowej. Napełnianie odbywa się automatycznie, gdy pada deszcz. Wodę można przelać do cysterny." />
+		<text name="gc_rainWaterStorage" text="Zbiornik na deszczówkę" />
+		<text name="gc_rainWaterStorageDesc" text="Zbiornik ten służy do zbierania wody deszczowej. Napełnianie odbywa się automatycznie, gdy pada deszcz. Wodę można przelać do cysterny." />
+		<text name="gc_rainWaterStorage_inputsHeaderTitle" text="Deszczówka" />
+		<text name="gc_rainWaterStorage_outputsHeaderTitle" text="Deszczówka" />
+		<text name="gc_rainWaterStorage_input1" text="Deszczówka" />
+		<text name="gc_rainWaterStorage_productLine" text="Zbiornik na deszczówkę" />	
+	</texts>
+</l10n>
