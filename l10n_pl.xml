@@ -186,7 +186,7 @@
 		<text name="shopItem_fertiMixerSLD" text="FertiMixerSLD™" />
 		<text name="function_fertiMixerSLD" text="Mobilna stacja mieszania do produkcji nawozu stałego. Do produkcji potrzebne są następujące surowce: azot (N), fosfor (P) i potas (K). Zaczep do ładowacza czołowego ułatwia transport FertiMixer." />
 		<text name="shopItem_ingredientsDispenser" text="Silos dozujący" />
-		<text name="function_ingredientsDispenser" text="Kupowany silos dozzujący na zakupione surowce potrzebne do produkcji nawozów stałych." />
+		<text name="function_ingredientsDispenser" text="Kupowany silos dozujący na zakupione surowce potrzebne do produkcji nawozów stałych." />
 		<text name="shopItem_compostMaster" text="CompostMaster™" />
 		<text name="function_compostMaster" text="Mobilna stacja mieszania do produkcji kompostu. Do produkcji można wykorzystać prawie wszystkie materiały organiczne. Zaczep do ładowacza czołowego ułatwia transport CompostMaster." />
 		<text name="enterText_fertiMixerLQ" text="Obsługa FertiMixerLQ" />
